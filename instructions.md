@@ -1,6 +1,6 @@
 # Nutshell Instructions
 
-Nutshell is a new product offering that you have been tasked with building. It's a dashboard for people to use to organize their daily tasks, events, articles, friends, and chat messages.
+Nutshell is a new product offering that you have been tasked with building. It's a dashboard for people to use to organize their daily weather, events, articles, friends, and chat messages.
 
 You will be utilizing all of the skills and concepts that you've learned up to this point in the course.
 
@@ -20,7 +20,7 @@ Your team should have 1 firebase project that is created through github projects
 /users
 /articles
 /events
-/tasks
+/weather
 /friends
 /messages
 ```
@@ -68,13 +68,13 @@ Each collection should have data in the following structure:
 }
 ```
 
-### Tasks
+### Weather
 
 ```json
 {
     "userUid": "5ykBb0xyadPZLgH4EPO4i88HIql2",
-    "task": "Take out garbage",
-    "isCompleted": true
+    "city": "Nashville,TN",
+    "isCurrentLocation": true
 }
 ```
 
@@ -90,19 +90,19 @@ Each collection should have data in the following structure:
 ```
 
 ## Division of Labor
-This project will consist of 5 modules or dashboard components (messages, friends, articles, events, tasks).  Each module involves doing complete CRUD on the collection it is named after.  Each member of your team will be responsible for a module.
+This project will consist of 5 modules or dashboard components (messages, friends, articles, events, weather).  Each module involves doing complete CRUD on the collection it is named after.  Each member of your team will be responsible for a module.
 
 Once a team member has claimed a module they are responsible for writing EVER SINGLE bit of code for that module.  If they require help your team should do some pair programming but the person who owns the module should do ALL THE TYPING.
 
-There should be NO gitcidents because each team member should be working in a folder named after their module.  For example if I am working on the tasks module I would have a file structure like:
+There should be NO gitcidents because each team member should be working in a folder named after their module.  For example if I am working on the weather module I would have a file structure like:
 
 ```js
 - src/
   - index.js
   - components/
-    - tasks/
-      - tasks.js
-      - tasks.scss
+    - weather/
+      - weather.js
+      - weather.scss
 ```
 
 Your team will need to closely collaborate on authentication and determining how to pull together all the modules to display them on the dashboard.
